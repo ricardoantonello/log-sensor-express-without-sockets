@@ -5,16 +5,16 @@ Main reference (e-Book): Full Stack Web Development with Raspberry Pi 3 (Packt).
 
 My site: https://cv.antonello.com.br
 
-#Instruções
+# Instruções
 
-##First, install the curl command:
+## First, install the curl command:
 sudo apt-get update && sudo apt-get install curl
-##Then, install nvm via the install script:
+## Then, install nvm via the install script:
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
 nvm --version __
 nvm install 6 __
 
-##Will look like this:
+## Will look like this:
 pi@raspberrypi:~ $ node -v __
 v6.10.2 __
 pi@raspberrypi:~ $ npm -v __
