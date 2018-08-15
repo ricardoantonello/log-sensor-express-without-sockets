@@ -5,14 +5,14 @@ My site: https://cv.antonello.com.br
 
 # Instruções
 
-## First, install the curl command:
+### First, install the curl command:
 sudo apt-get update && sudo apt-get install curl
-## Then, install nvm via the install script:
+### Then, install nvm via the install script:
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
 nvm --version  
 nvm install 6  
 
-## Will look like this:
+### Will look like this:
 pi@raspberrypi:~ $ node -v  
 v6.10.2  
 pi@raspberrypi:~ $ npm -v  
