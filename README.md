@@ -82,7 +82,24 @@ The -g flag indicates that we want to install the pm2 module globally and not ju
 pm2 --version  
 pm2 start server/  
 
-##pm2
+## pm2 on python
 If you're working with Python, remember that pm2 can run scripts .py to.  
 Example: pm2 start "python3 run.py runserver" --name flaskserver  
+
+## Reading DHT11 sensor
+git clone git://git.drogon.net/wiringPi  
+cd wiringPi/  
+./build  
+gpio -v
+wget http://www.airspayce.com/mikem/bcm2835/bcm2835-1.52.tar.gz  
+tar -xvzf bcm2835-1.52.tar.gz  
+cd bcm2835-1.52  
+./configure  
+make  
+sudo make check  
+sudo make install
+npm install --save node-dht-sensor
+
+## Instaling Chart.js
+npm install chart.js --save
 
