@@ -103,3 +103,27 @@ npm install --save node-dht-sensor
 ## Instaling Chart.js
 npm install chart.js --save
 
+## Instaling Sqlite3
+npm install sqlite3
+
+sudo apt-get update  
+sudo apt-get install sqlite3  
+sqlite3 --version  
+sqlite # entra no prompt de comando do sqlite3
+#### Comands examples
+CREATETABLE temperature (createdAt TEXT,valueREAL);  
+CREATETABLE humidity (createdAt TEXT,valueREAL);  
+.tables # to list tables  
+INSERT INTO temperature VALUES(datetime('now'),16.7);  
+SELECT * FROM temperature;  
+SELECT"value"from temperature;  
+SELECT*FROM temperature WHERE createdAt >"2017-06-18"  
+SELECT"value"FROM temperature WHERE createdAt >"2017-06-18 12:26:09";  
+UPDATE <table name> SET <colum name>=<new value> WHERE <filter condition>;  
+UPDATE temperature SET value=16.6 WHERE createdAt="2017-06-18 12:26:08";  
+DELETE FROM <table name> WHERE <filter condition>;  
+SELECT avg(value) FROM temperature;  
+SELECT max(value) FROM temperature;  
+SELECT max(value) FROM temperature WHERE createdAt < "2017-06-18 12:26:10";  
+SELECT * FROM temperature WHERE value > (SELECT avg(value) FROM temperature);  
+SELECT value, (SELECT avg(value) FROM temperature)-value as deviation, createdAt FROM temperature;
