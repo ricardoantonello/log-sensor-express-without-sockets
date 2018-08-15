@@ -1,9 +1,11 @@
 # log-sensor-express (in progress)
 Logs sensor data (DHT11) in local data base (sqlite), visualize in browser (express and chart.js) and backup online in firebase. </br>
+
 Main reference (e-Book): Full Stack Web Development with Raspberry Pi 3 (Packt).
+
 My site: https://cv.antonello.com.br
 
-<h3>Instruções</h3>
+Instruções</h3>
 
 
 First, install the curl command:
@@ -68,6 +70,23 @@ After that and with index.js completed you can run the server
 node server (server is the folder where you have the index.js)
 
 
+
+### APENDICE Github
+#Minha sugestao é criar o repositorio online, fazer o clone para baixar para a maquina local, incluir e alterar os arquivos e depois add, commit e push...
+#Use git pull pra atualizar da nuvem para local em repo já criado
+##Comandos
+#Change the current working directory to your local project.
+#git init #Initialize the local directory as a Git repository.
+#git add . # Adds the files in the local repository and stages (organize) them for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
+#git commit -m "First commit" # Commits the tracked changes and prepares them to be pushed to a remote repository. To remove this commit and modify the file, use 'git reset --soft HEAD~1' and commit and add the file again.
+#git remote add origin remote repository URL # Sets the new remote
+#git remote -v ## Verifies the new remote URL
+#git push origin master # Pushes the changes in your local repository up to the remote repository you specified as the origin
+#Importing a Git repository using the command line
+#git clone https://external-host.com/extuser/repo.git # cria a pasta repo.git
+#cd repo.git
+#git push --mirror https://github.com/ghuser/repo.git # Pushes the mirror to the new GitHub repository
+#cd .. E rm -rf repo.git # apaga a pasta temporaria
 
 
 
