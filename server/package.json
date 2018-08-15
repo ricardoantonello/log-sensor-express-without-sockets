@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "express server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricardoantonello/log-sensor-express.git"
+  },
+  "author": "Ricardo Antonello",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ricardoantonello/log-sensor-express/issues"
+  },
+  "homepage": "https://github.com/ricardoantonello/log-sensor-express#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
