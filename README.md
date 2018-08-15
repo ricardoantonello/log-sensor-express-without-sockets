@@ -1,9 +1,7 @@
 # log-sensor-express (in progress)
-Logs sensor data (DHT11) in local data base (sqlite), visualize in browser (express and chart.js) and backup online in firebase. </br>
-
-Main reference (e-Book): Full Stack Web Development with Raspberry Pi 3 (Packt).
-
-My site: https://cv.antonello.com.br
+Logs sensor data (DHT11) in local data base (sqlite), visualize in browser (express and chart.js) and backup online in firebase.  
+Main reference (e-Book): Full Stack Web Development with Raspberry Pi 3 (Packt).  
+My site: https://cv.antonello.com.br  
 
 # Instruções
 
@@ -11,14 +9,14 @@ My site: https://cv.antonello.com.br
 sudo apt-get update && sudo apt-get install curl
 ## Then, install nvm via the install script:
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
-nvm --version __
-nvm install 6 __
+nvm --version  
+nvm install 6  
 
 ## Will look like this:
-pi@raspberrypi:~ $ node -v __
-v6.10.2 __
-pi@raspberrypi:~ $ npm -v __
-3.10.10 __
+pi@raspberrypi:~ $ node -v  
+v6.10.2  
+pi@raspberrypi:~ $ npm -v  
+3.10.10  
 
 </h4>Create git</h4>
 mkdir sensor-project
