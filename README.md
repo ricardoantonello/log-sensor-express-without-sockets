@@ -76,9 +76,13 @@ cd repo.git
 git push --mirror https://github.com/ghuser/repo.git # Pushes the mirror to the new GitHub repository  
 cd .. E rm -rf repo.git # apaga a pasta temporaria  
 
+## Keeping the server running in the background
+npm install -g pm2  
+The -g flag indicates that we want to install the pm2 module globally and not just in our project directory. What this will also do is install any binaries the module has as command-line tools.
+pm2 --version  
+pm2 start server/  
 
-
-
-
-
+##pm2
+If you're working with Python, remember that pm2 can run scripts .py to.  
+Example: pm2 start "python3 run.py runserver" --name flaskserver  
 
