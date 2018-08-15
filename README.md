@@ -5,8 +5,7 @@ Main reference (e-Book): Full Stack Web Development with Raspberry Pi 3 (Packt).
 
 My site: https://cv.antonello.com.br
 
-Instruções</h3>
-
+#Instruções
 
 First, install the curl command:
 sudo apt-get update && sudo apt-get install curl
