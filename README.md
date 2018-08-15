@@ -31,7 +31,7 @@ git remote add origin https://my-remote-repo-url.com/sensor-project.git
 git push origin master  
 
 ### On Raspberry Pi 3
-Now, all your code is present on the cloud. All you have to do now is go into your Raspberry Pi's Terminal and run this:
+Now, all your code is present on the cloud. All you have to do now is go into your Raspberry Pi's Terminal and run this:  
 git clone https://my-remote-repo-url.com/sensor-project.git  
 cd ~/sensor-project  
 #### You now have the project fully cloned on your Pi. To make changes and reflect them on your Pi, first, make the changes to files or folders on your computer and then add and push the changes to the repository:  
@@ -52,7 +52,7 @@ echo "node_modules" >> .gitignore
 #### After that and with index.js completed you can run the server (server is the folder where you have the index.js)
 node server  
 
-# APENDICE Github (in brazilian portuguese, sorry ;)
+# APENDICE Github (in brazilian portuguese ;)
 ### Minha sugestao é criar o repositorio online, fazer o clone para baixar para a maquina local, incluir e alterar os arquivos e depois add, commit e push...
 git clone  <git adress>  
 git add -A  
