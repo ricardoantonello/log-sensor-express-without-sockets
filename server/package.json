@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/ricardoantonello/log-sensor-express#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "node-dht-sensor": "0.0.34",
+    "node-pre-gyp": "^0.11.0",
+    "sqlite3": "^4.0.2"
   }
 }

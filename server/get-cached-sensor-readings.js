@@ -1,4 +1,6 @@
 const getSensorReadings = require('./get-sensor-readings')
+const databaseOperations =require('./database-operations')
+
 //Instantiate the cache. In this case its a simple variable stored in local memory
 const cache = {
     temperature: null,
@@ -12,6 +14,10 @@ setInterval(() => {
           console.log("Erro ao ler sensor em getCachedSensorReadings!")
           return console.error(err)
         }
+        //record data in database
+        databaseOperations.insertReading('temperature',temperature)
+        databaseOperations.insertReading('humidity', humidity)
+        
         //Set the values of the cache on receiving new readings
         cache.temperature = temperature
         cache.humidity = humidity
