@@ -8,11 +8,11 @@ const fetchLatestReadings =(type, limit, callback)=>{
         db.all(`SELECT * FROM ${type} ORDER BY createdAt DESC LIMIT ${limit}`, callback)}
 
 const fetchReadingsBetweenTime =(type, start, end, callback)=>{
-        db.all(`SELECT * FROM temperature WHERE createdAt > ? 
+        db.all(`SELECT * FROM ${type} WHERE createdAt > ? 
             AND createdAt < ?;`,[start, end], callback)}
 
 const getAverageOfReadingsBetweenTime = (type, start, end, callback)=>{
-        db.get(`SELECT avg(value) FROM temperature WHERE
+        db.get(`SELECT avg(value) FROM ${type} WHERE
             createdAt > ? AND createdAt < ?;`,[start, end], callback)}
 
 /* Export all the functions we just created as methods to the exported singleton */
